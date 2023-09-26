@@ -1,0 +1,41 @@
+{% extends 'master.html' %}
+
+
+{% block content %}
+
+<h1>Change Password Here...</h1>
+
+<p style="color:blue;">{{output}}</p>
+<form method="POST" action="/resetpass/">
+{% csrf_token %}  
+  
+<div class="row">
+  <div class="col-md-12 mb-4">
+    
+  </div>
+</div>
+
+<div class="form-outline mb-4">
+    <input type="hidden" name="vemail" value="{{vemail}}">
+  </div>  
+
+<div class="form-outline mb-4">
+  <input type="password" name="npass" class="form-control" />
+  <label class="form-label" for="pwd">New Password</label>
+</div>   
+
+<div class="form-outline mb-4">
+    <input type="password" name="cnpass" class="form-control" />
+    <label class="form-label" for="pwd">Confirm New Password</label>
+  </div>                    
+  
+<!-- Submit button -->
+<button type="submit" class="btn btn-primary btn-block mb-4">Change Password</button>
+
+
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,26 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<h1>Change Password Here...</h1>
+
+<p style="color:blue;">{{output}}</p>
+<form method="POST" action="/reset/">
+{% csrf_token %}  
+  
+<div class="row">
+  <div class="col-md-12 mb-4">
+    
+  </div>
+</div>
+<div class="form-outline mb-4">
+    <input type="email" name="email" class="form-control" />
+    <label class="form-label" for="email">Email ID</label>
+</div>
+
+<!-- Submit button -->
+<button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+
+
+
+{% endblock %}
+

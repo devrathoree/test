@@ -1,0 +1,64 @@
+{% extends 'master.html' %}
+
+{% block trackingid %}
+<div class="text-start">
+    <h6 class="text-uppercase fw-bold">Email Id</h6>
+    <span>{{sunm}}</span>
+</div>
+{% endblock %}
+
+{% block nav %}
+
+    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
+        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
+                <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi bi-square text-primary me-2"></i>Tender</h1>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/myadmin/" class="nav-item nav-link active">Admin Home</a>
+                   <!-- <a href="/about/" class="nav-item nav-link">About/</a>
+                    <a href="/service/" class="nav-item nav-link">Service</a>
+                    <a href="/register/" class="nav-item nav-link">Register</a>-->
+                    <a href="/myadmin/manageusers/" class="nav-item nav-link">Manage Users</a>
+                    <a href="/myadmin/addcategory/" class="nav-item nav-link">Add Category</a>
+                    <a href="/myadmin/addsubcategory/" class="nav-item nav-link">Add Sub Category</a>
+                    <a href="/login/" class="nav-item nav-link">Logout</a>
+                    <a href="" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block"> <i class="bi bi-search"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to admin panel </h1>
+<p>hello </p>
+{% endblock %}
+
+{% block multi %}
+
+{% endblock %}
+
+{% block footer %}
+
+<div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+        <div class="py-4 px-5 text-center text-md-start">
+            <p class="mb-0">&copy; <a class="text-primary" href="#">2022-2023 Django project</a>. All Rights Reserved.</p>
+        </div>
+        <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
+            <p class="mb-0">Designed by <a class="text-dark" href="#">Django project</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
